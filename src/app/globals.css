@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Warm "paper" palette. Light only, on purpose: it should feel like a page
+   in afternoon light. Chart colors (career/personal) are the saturated
+   pair; the -soft variants are for card backgrounds. The pair was checked
+   for color-blind separation and >= 3:1 contrast against the surface. */
+@theme {
+  --color-bg: #faf6ee;
+  --color-surface: #fffdf8;
+  --color-ink: #3b3a36;
+  --color-muted: #6f6a5f;
+  --color-faint: #a39e92;
+  --color-line: #ece5d8;
+  --color-accent: #4f7361;
+  --color-accent-soft: #e3ece5;
+  --color-career: #4a78bc;
+  --color-career-soft: #e1e9f5;
+  --color-personal: #cc7148;
+  --color-personal-soft: #f7e4d9;
+  --color-danger: #b4533a;
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-literata);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
